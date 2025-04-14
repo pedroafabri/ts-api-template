@@ -1,0 +1,43 @@
+# Node/Bun
+node_modules/
+bun.lockb
+
+# TypeScript
+dist/
+build/
+*.tsbuildinfo
+
+# Prisma
+/prisma/dev.db
+/prisma/dev.db-journal
+/prisma/migrations/
+
+# Env vars
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode
+.vscode/
+
+# OS / Editor stuff
+.DS_Store
+Thumbs.db
+
+# Coverage (caso use testes)
+coverage/
+.nyc_output/
+
+# Docker
+*.local.yml
+docker-compose.override.yml
+
+# Optional: SQLite backups
+*.sqlite
+*.sqlite-journal

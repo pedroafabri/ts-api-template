@@ -1,0 +1,49 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "prepare": "husky",
+    "commit": "bunx cz"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "pino": "^9.6.0",
+    "reflect-metadata": "^0.2.2",
+    "tsyringe": "^4.9.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "commitizen": "^4.3.1",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "pino-pretty": "^13.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitizen/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "bunx eslint --fix",
+      "bunx prettier --write"
+    ],
+    "*.{js,json,md}": [
+      "bunx prettier --write"
+    ]
+  }
+}
