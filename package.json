@@ -1,18 +1,23 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "bun --watch src/index.ts",
+    "dev": "bun tsoa:gen && bun run --watch src/index.ts",
+    "build": "bun routes:gen && bun build",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write .",
+    "pretty": "bun lint:fix && bun format",
     "prepare": "husky",
-    "commit": "bunx cz"
+    "commit": "bunx cz",
+    "routes:gen": "tsoa routes",
+    "doc:gen": "tsoa spec",
+    "tsoa:gen": "bun routes:gen && bun doc:gen"
   },
   "dependencies": {
     "express": "^5.1.0",
     "pino": "^9.6.0",
     "reflect-metadata": "^0.2.2",
-    "tsyringe": "^4.9.1",
+    "tsoa": "^6.6.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {

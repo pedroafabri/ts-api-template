@@ -5,6 +5,7 @@ import pluginPrettier from 'eslint-plugin-prettier';
 export default [
   {
     files: ['**/*.ts'],
+    ignores: ['build/**'],
     languageOptions: {
       parser: parserTs,
       parserOptions: {
@@ -21,6 +22,12 @@ export default [
       ...pluginPrettier.configs.recommended.rules,
       'prettier/prettier': 'error',
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        {
+          prefer: 'type-imports',
+        },
+      ],
     },
   },
 ];

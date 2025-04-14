@@ -41,3 +41,10 @@ docker-compose.override.yml
 # Optional: SQLite backups
 *.sqlite
 *.sqlite-journal
+
+# tsoa routes
+src/server/tsoa-generated/*
+src/server/tsoa-generated/.gitkeep
+
+# tsoa docs
+docs/
