@@ -2,14 +2,15 @@
 
 ## TODO:
 
-🟩 Better docs
 ✅ EnvVar encapsulation
-🟩 Prisma
+✅ Prisma
 ✅ Dependency Injection
 ✅ LINT
-🟩 Auto doc generation
-🟩 CI/CD
-✅ Logger
-🟩 Docker
+✅ Auto doc generation
 ✅ Slack notification
 ✅ Commit prehook
+✅ Logger
+✅ Testes
+
+🟩 Better docs
+🟩 Docker

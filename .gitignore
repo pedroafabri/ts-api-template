@@ -1,6 +1,5 @@
 # Node/Bun
 node_modules/
-bun.lockb
 
 # TypeScript
 dist/
@@ -10,11 +9,11 @@ build/
 # Prisma
 /prisma/dev.db
 /prisma/dev.db-journal
-/prisma/migrations/
 
 # Env vars
 .env
 .env.*
+!.env.example
 
 # Logs
 logs/

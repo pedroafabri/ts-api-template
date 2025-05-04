@@ -7,6 +7,5 @@ export function initializeGlobalErrorHandler() {
 
   process.on('uncaughtException', (err) => {
     logger.fatal(err, '❌ Uncaught Exception');
-    process.exit(1);
   });
 }
