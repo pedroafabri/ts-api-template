@@ -123,3 +123,9 @@ To build and run a production-ready image:
 docker build -f Dockerfile.prod -t rapidstack-api .
 docker run -p 3000:3000 --env-file .env rapidstack-api
 ```
+
+## 🎯 Future (Maybe?)
+
+- Add Docker Compose for local development;
+- Add code coverage constraints;
+- Code injection;
