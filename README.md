@@ -1,4 +1,4 @@
-# RapidStack API Template
+# TypeScript API Template
 
 A modern and well-structured TypeScript API template using [Bun](https://bun.sh/), [Prisma](https://www.prisma.io/), [Express](https://expressjs.com/), and [Tsoa](https://tsoa-community.github.io/docs/home/). This project aims to deliver a clean and scalable architecture from the start.
 
