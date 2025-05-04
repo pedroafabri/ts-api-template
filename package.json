@@ -11,7 +11,11 @@
     "commit": "bunx cz",
     "routes:gen": "tsoa routes",
     "doc:gen": "tsoa spec",
-    "tsoa:gen": "bun routes:gen && bun doc:gen"
+    "tsoa:gen": "bun routes:gen && bun doc:gen",
+    "prisma:generate": "bunx prisma generate",
+    "migrate:create": "bunx prisma migrate dev --name ",
+    "migrate:deploy": "bunx prisma migrate deploy",
+    "migrate:reset": "bunx prisma migrate reset"
   },
   "dependencies": {
     "express": "^5.1.0",
