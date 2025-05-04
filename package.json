@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "test": "bun --env-file=.env.test run test:prepare && bun --env-file=.env.test test",
+    "test": "bun --env-file=.env.test run test:prepare && bun --env-file=.env.test test --coverage",
     "test:prepare": "bunx prisma db push --force-reset --schema=prisma/schema.prisma",
     "dev": "bun tsoa:gen && bun run --watch src/index.ts",
     "build": "bun routes:gen && bun build",
